@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --atomic-tangerine: hsla(18, 80%, 68%, 1);
+    --ecru: hsla(35, 38%, 63%, 1);
+    --rich-black: hsla(195, 46%, 5%, 1);
+    --mountbatten-pink: hsla(303, 7%, 47%, 1);
+    --slate-gray: hsla(212, 20%, 46%, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    color: var(--rich-black);
+    overflow: hidden; /* Prevent body overflow */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; /* Use full height of the viewport */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    background: var(--ecru);
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.playerName h2 {
+    font-size: 2.5rem; /* Adjust font size for better fit */
+    font-weight: 300;
+    margin-bottom: 10px; /* Add some space below the title */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: var(--mountbatten-pink);
+    border-radius: 10px;
+    text-align: center;
+    gap: 10px;
+    width: 90%; /* Make cards responsive */
+    max-width: 300px; /* Limit max width of cards */
+}
+
+.card p {
+    font-size: 1.2rem; /* Adjust font size for better fit */
+}
+
+.card span {
+    font-weight: 600;
+}
+
+.arrowContainer {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.arrowContainer span {
+    width: 80px; /* Adjust width for better fit */
+    height: 40px; /* Adjust height for better fit */
+    font-size: 1.5rem; /* Adjust font size for better fit */
+    font-weight: 900;
+    border-radius: 10px;
+    background: var(--atomic-tangerine);
+    user-select: none;
+}
+
+.arrowContainer span:hover {
+    background: var(--ecru);
+}
+
+.steelProd {
+    font-size: 1.5rem; /* Adjust font size for better fit */
+    font-weight: 500;
+    user-select: none;
+    border-radius: 10px;
+    background: var(--atomic-tangerine);
+}
+
+.steelProd:hover {
+    background: var(--ecru);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Reduce gap between cards */
+}
